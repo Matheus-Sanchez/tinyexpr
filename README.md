@@ -244,7 +244,7 @@ TinyExpr parses the following grammar:
     <list>      =    <expr> {"," <expr>}
     <expr>      =    <term> {("+" | "-") <term>}
     <term>      =    <factor> {("*" | "/" | "%") <factor>}
-    <factor>    =    <power> {"^" <power>}
+    <factor>    =    <power> {"^" <power>} | <power> {"!"}
     <power>     =    {("-" | "+")} <base>
     <base>      =    <constant>
                    | <variable>
